@@ -57,9 +57,8 @@ For execution, the initial request also contains:
 
 Use `mock=false` for hardware. The preview response adds
 `execution={mode,stream_id,run_id}`. One WebSocket connection owns one episode.
-This is a measured-scene Code Policy/Skills port: feedback gates advancement of the
-precompiled plan, with external observations at checkpoints. It does not implement
-the full DSR Agent/RSI or online visual replanning.
+This measured-scene Code Policy/Skills port advances precompiled plans through
+robot feedback and external observations at checkpoints.
 
 Before step `i` (starting at zero), the client waits for feedback sequences from
 **both** arms to advance, then sends:

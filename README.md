@@ -1,9 +1,12 @@
 # DSR
 
-DSR is a runnable orchestration layer for PhysicalRSI-compatible embodied policy
-evaluation and the XTrainer real-robot adapter. The repository contains source,
-configuration schemas, launchers, vendor licenses, and evaluation videos. Checkpoints,
-simulator installations, datasets, credentials, and generated logs stay external.
+DSR (Dual-level Self-improving Robotics) connects robot execution with persistent
+capability development. It composes registered capabilities through typed contracts,
+preserves task state across replanning, and evolves executable capabilities together
+with the mechanisms that develop them.
+
+This repository provides evaluation code, configuration templates, real-robot
+deployment tools, and multi-view manipulation videos.
 
 ## Videos
 
@@ -88,7 +91,7 @@ precompiled Code Policy plans and does not start the robot node.
 
 ## Layout
 
-`src/dsr` contains the orchestration runtime, `tools` contains evaluation and asset
-helpers, `configs` contains schemas and templates, and `xtrainer_real` contains the
-WebSocket client/server and hardware adapter. Vendor license files remain beside
-their source trees.
+`src/dsr` contains the DSR execution and development runtime, `tools` contains
+evaluation and asset helpers, `configs` contains schemas and templates, and
+`xtrainer_real` contains the WebSocket client/server and hardware adapter. Vendor
+license files remain beside their source trees.
