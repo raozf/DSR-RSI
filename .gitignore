@@ -27,6 +27,7 @@ dist/
 *.ckpt
 *.onnx
 *.mp4
+!/media/videos/*.mp4
 *.mkv
 *.avi
 *.mov

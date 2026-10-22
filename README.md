@@ -2,8 +2,26 @@
 
 DSR is a runnable orchestration layer for PhysicalRSI-compatible embodied policy
 evaluation and the XTrainer real-robot adapter. The repository contains source,
-configuration schemas, launchers, and vendor licenses. Checkpoints, simulator
-installations, datasets, credentials, and generated results stay external.
+configuration schemas, launchers, vendor licenses, and evaluation videos. Checkpoints,
+simulator installations, datasets, credentials, and generated logs stay external.
+
+## Videos
+
+Eight recordings are shown from the head camera and both wrist cameras. Select a
+preview to open the corresponding video. All 24 original clips are in
+[`media/videos`](media/videos). After cloning, open
+[the video gallery](media/videos/index.html) in a browser for playback.
+
+| Recording | Head camera | Left wrist | Right wrist |
+| --- | --- | --- | --- |
+| 01. Object-rich tabletop scene | [![Object-rich tabletop scene — Head camera](media/videos/previews/sequence_01_head.jpg)](media/videos/episode_0000003_cam_head_success.mp4) | [![Object-rich tabletop scene — Left wrist](media/videos/previews/sequence_01_left_wrist.jpg)](media/videos/episode_0000003_cam_left_wrist_success.mp4) | [![Object-rich tabletop scene — Right wrist](media/videos/previews/sequence_01_right_wrist.jpg)](media/videos/episode_0000003_cam_right_wrist_success.mp4) |
+| 02. Shirt folding | [![Shirt folding — Head camera](media/videos/previews/sequence_02_head.jpg)](media/videos/episode_0000004_cam_head_success.mp4) | [![Shirt folding — Left wrist](media/videos/previews/sequence_02_left_wrist.jpg)](media/videos/episode_0000004_cam_left_wrist_success.mp4) | [![Shirt folding — Right wrist](media/videos/previews/sequence_02_right_wrist.jpg)](media/videos/episode_0000004_cam_right_wrist_success.mp4) |
+| 03. Mug placement, recording A | [![Mug placement, recording A — Head camera](media/videos/previews/sequence_03_head.jpg)](media/videos/episode_0000006_cam_head_success.mp4) | [![Mug placement, recording A — Left wrist](media/videos/previews/sequence_03_left_wrist.jpg)](media/videos/episode_0000006_cam_left_wrist_success.mp4) | [![Mug placement, recording A — Right wrist](media/videos/previews/sequence_03_right_wrist.jpg)](media/videos/episode_0000006_cam_right_wrist_success.mp4) |
+| 04. Mug placement, recording B | [![Mug placement, recording B — Head camera](media/videos/previews/sequence_04_head.jpg)](media/videos/episode_0000006_cam_head_success%20copy.mp4) | [![Mug placement, recording B — Left wrist](media/videos/previews/sequence_04_left_wrist.jpg)](media/videos/episode_0000006_cam_left_wrist_success%20copy.mp4) | [![Mug placement, recording B — Right wrist](media/videos/previews/sequence_04_right_wrist.jpg)](media/videos/episode_0000006_cam_right_wrist_success%20copy.mp4) |
+| 05. Digit arrangement | [![Digit arrangement — Head camera](media/videos/previews/sequence_05_head.jpg)](media/videos/episode_0000007_cam_head_success.mp4) | [![Digit arrangement — Left wrist](media/videos/previews/sequence_05_left_wrist.jpg)](media/videos/episode_0000007_cam_left_wrist_success.mp4) | [![Digit arrangement — Right wrist](media/videos/previews/sequence_05_right_wrist.jpg)](media/videos/episode_0000007_cam_right_wrist_success.mp4) |
+| 06. Desktop organization | [![Desktop organization — Head camera](media/videos/previews/sequence_06_head.jpg)](media/videos/episode_0000008_cam_head_success.mp4) | [![Desktop organization — Left wrist](media/videos/previews/sequence_06_left_wrist.jpg)](media/videos/episode_0000008_cam_left_wrist_success.mp4) | [![Desktop organization — Right wrist](media/videos/previews/sequence_06_right_wrist.jpg)](media/videos/episode_0000008_cam_right_wrist_success.mp4) |
+| 07. Threaded-part assembly | [![Threaded-part assembly — Head camera](media/videos/previews/sequence_07_head.jpg)](media/videos/episode_0000010_cam_head_success.mp4) | [![Threaded-part assembly — Left wrist](media/videos/previews/sequence_07_left_wrist.jpg)](media/videos/episode_0000010_cam_left_wrist_success.mp4) | [![Threaded-part assembly — Right wrist](media/videos/previews/sequence_07_right_wrist.jpg)](media/videos/episode_0000010_cam_right_wrist_success.mp4) |
+| 08. Holder packing | [![Holder packing — Head camera](media/videos/previews/sequence_08_head.jpg)](media/videos/episode_0000015_cam_head_success.mp4) | [![Holder packing — Left wrist](media/videos/previews/sequence_08_left_wrist.jpg)](media/videos/episode_0000015_cam_left_wrist_success.mp4) | [![Holder packing — Right wrist](media/videos/previews/sequence_08_right_wrist.jpg)](media/videos/episode_0000015_cam_right_wrist_success.mp4) |
 
 ## Install
 
