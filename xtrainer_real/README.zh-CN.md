@@ -44,3 +44,23 @@ SDK 适配。SDK 按 `ws-sdk.lock.json` 中的提交获取，适配器不修改 
 `site.json`、`calibration.json`、`transport.json` 必须使用当前实测值。场景
 文件的坐标单位为毫米和度，协议、回执和消息身份见 `ws_bridge/PROTOCOL.md`。
 不要把 node 的本地 pickle 接口暴露到控制电脑以外。
+
+每臂需要实测 `world_T_base`、工具 TCP、关节范围，以及同一姿态下的
+`park_tcp_world_mm_deg` 和 `park_joints_deg`。TCP 格式为
+`[x,y,z,rx,ry,rz]`，旋转顺序为 `Rz @ Ry @ Rx`。在 `transport.json`
+核对夹爪映射与初始开度；完成标定后再将 `example_only` 设为 `false`，
+填写标定确认字段。场景 `captured_at` 使用带时区的真实采集时间，默认
+有效期为 120 秒。
+
+任务检查点使用 `examples/*.observation.json` 的对应格式提交实测观测：
+
+```bash
+./.venv/bin/python -m dsr_xtrainer.cli checkpoint \
+  --request runs/<run>/checkpoints/<stage>.request.json \
+  --observation local/measured-observation.json
+```
+
+观测需填写 `source=manual/vision`、`simulated=false`、`approved=true`
+和真实时间，程序同时校验 run、stage、calibration 及任务条件。
+`--checkpoint-dir` 可接外部观测程序。独立急停入口为
+`./emergency_stop.sh --config local/site.json`。

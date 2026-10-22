@@ -48,3 +48,26 @@ button available throughout operation.
 measured values. Scene files use millimetres and degrees in a shared world frame;
 the protocol file defines the message identities and receipt rules. Do not expose
 the node's local pickle interface outside the robot control computer.
+
+For each arm, measure `world_T_base`, the tool TCP, joint limits, and matching
+`park_tcp_world_mm_deg` / `park_joints_deg`. TCP targets are
+`[x,y,z,rx,ry,rz]` in millimetres and degrees with `Rz @ Ry @ Rx` rotation.
+Confirm the gripper command mapping and initial opening in `transport.json`.
+After measurement, set the configuration `example_only` fields to `false` and
+complete the calibration flags. Scene `captured_at` must be current and include
+a timezone; the default validity window is 120 seconds.
+
+At a task checkpoint, supply a measured observation using the corresponding
+`examples/*.observation.json` format:
+
+```bash
+./.venv/bin/python -m dsr_xtrainer.cli checkpoint \
+  --request runs/<run>/checkpoints/<stage>.request.json \
+  --observation local/measured-observation.json
+```
+
+Observations use `source=manual` or `vision`, `simulated=false`, `approved=true`,
+and an actual capture time. The client checks the run, stage, calibration, and
+task conditions before advancing. `--checkpoint-dir` connects an external
+observation writer. The independent stop entry point is
+`./emergency_stop.sh --config local/site.json`.

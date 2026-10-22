@@ -10,6 +10,8 @@ installations, datasets, credentials, and generated results stay external.
 Use Python 3.11 and an internet-enabled machine:
 
 ```bash
+git clone https://github.com/raozf/DSR-RSI.git
+cd DSR-RSI
 DSR_PYTHON=/path/to/python3.11 scripts/install.sh
 .venv/bin/dsr doctor
 ```
@@ -33,6 +35,16 @@ runtime source; simulator dependencies remain external. For a bounded smoke run:
 ```
 
 For the full protocol use disjoint policy and simulator GPUs with `--seeds 0,1,2`.
+For example, on eight available GPUs:
+
+```bash
+.venv/bin/dsr --config configs/local.json evaluate \
+  --policy integrated --recovery single-restart --full-protocol \
+  --policy-gpus 0,2,4,6 --env-gpus 1,3,5,7 --seeds 0,1,2 \
+  --run-timeout 86400 --run-id full-eval \
+  --output-root /external/dsr-results --state-root /external/dsr-state
+```
+
 The launcher writes `task_accuracy.json` and episode records below the external
 output root; state and resume locks live below the external state root.
 

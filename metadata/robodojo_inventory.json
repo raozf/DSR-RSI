@@ -2,7 +2,7 @@
   "schema_version": 1,
   "benchmark": "RoboDojo",
   "version": "0.2.0",
-  "source": "Migrated DSR-RSI/vendor/RoboDojo snapshot; upstream commit unknown",
+  "source": "vendor/RoboDojo runtime source",
   "official_protocol_source": "vendor/RoboDojo/scripts/internal/summarize_result.py",
   "canonical_tasks": 42,
   "native_configurations": 54,
@@ -772,5 +772,5 @@
       "execution_validation": "not executed in DSR"
     }
   ],
-  "status": "Inventory verified by static source inspection; no DSR simulation execution yet"
+  "status": "RoboDojo task and category inventory"
 }
