@@ -1,0 +1,7 @@
+{
+  "source": "manual",
+  "simulated": false,
+  "approved": true,
+  "captured_at": "REPLACE_WITH_OBSERVATION_TIME_ISO8601",
+  "grasped_object": "cup0"
+}

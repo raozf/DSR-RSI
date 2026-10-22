@@ -1,0 +1,10 @@
+numpy>=1.26,<3
+pyserial>=3.5,<4
+# Imported by the official low-level Dobot module via function_utils.
+opencv-python-headless>=4.10,<5
+h5py>=3.10,<4
+requests>=2.32,<3
+pyzmq>=26,<28
+websockets>=15,<16
+websocket-client>=1.8,<2
+pillow>=10,<13

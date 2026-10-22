@@ -1,0 +1,446 @@
+{
+  "counts": {
+    "manipulation_primitive": 6,
+    "robotics_or_execution_utility": 23,
+    "skill_composition": 1,
+    "validated_clips_in_this_audit": 0,
+    "validated_successful_skill_executions_in_this_audit": 0
+  },
+  "learned_adapters": [
+    "src/dsr/system1/dm05_policy.py",
+    "vendor/PhysicalRSI/PhysicalRSI_baselines/robodojo/skills/pi05.py",
+    "vendor/PhysicalRSI/PhysicalRSI_baselines/robodojo/skills/sparse.py"
+  ],
+  "limitations": [
+    "DM05SkillBinding names are routing operations, not independently learned or validated skills.",
+    "Memory operation IDs and callable utilities do not count as independent validated manipulation skills."
+  ],
+  "registry": {
+    "execution": "vendor/PhysicalRSI/PhysicalRSI_baselines/robodojo/execution_skills.py",
+    "metadata": "src/dsr/skills/skill_library.py"
+  },
+  "schema": "dsr.skill-inventory/v1",
+  "scope": "Shared functions are classified separately from task code programs and learned-policy adapters.",
+  "skills": [
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 4,
+      "signature": "executor, counts=None, *, initialize_missing=False",
+      "skill_id": "action_primitives.advance_single",
+      "source": {
+        "bytes": 691,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/action_primitives.py",
+        "sha256": "10e49800aff04d463c7294563d7cad904d47ecc011460538e6373660abedad27"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 11,
+      "signature": "executor, indices, counts=None, *, count_indices=None, initialize_missing=False",
+      "skill_id": "action_primitives.advance_batch",
+      "source": {
+        "bytes": 691,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/action_primitives.py",
+        "sha256": "10e49800aff04d463c7294563d7cad904d47ecc011460538e6373660abedad27"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 10,
+      "signature": "instance, source_file, owner, method, packet",
+      "skill_id": "block_programs.execute_blocks",
+      "source": {
+        "bytes": 1984,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/block_programs.py",
+        "sha256": "9780a4b0f22ee3737dee281bf7f5db173aaef1844a1d06caf04268800a96e3b6"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 31,
+      "signature": "start, target",
+      "skill_id": "cartesian_skills.orientation_path",
+      "source": {
+        "bytes": 1647,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/cartesian_skills.py",
+        "sha256": "4b316aa686aff4cd642f23f3e1b0bb14668f17b0f8a1a77c38f6bdbccc67f646"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 36,
+      "signature": "start, target, arm, step, duration, orientation",
+      "skill_id": "cartesian_skills.interpolate_cartesian",
+      "source": {
+        "bytes": 1647,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/cartesian_skills.py",
+        "sha256": "4b316aa686aff4cd642f23f3e1b0bb14668f17b0f8a1a77c38f6bdbccc67f646"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 45,
+      "signature": "actual, target",
+      "skill_id": "cartesian_skills.pose_error",
+      "source": {
+        "bytes": 1647,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/cartesian_skills.py",
+        "sha256": "4b316aa686aff4cd642f23f3e1b0bb14668f17b0f8a1a77c38f6bdbccc67f646"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 53,
+      "signature": "previous, fraction, error, position_tolerance, angle_tolerance",
+      "skill_id": "cartesian_skills.settled_steps",
+      "source": {
+        "bytes": 1647,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/cartesian_skills.py",
+        "sha256": "4b316aa686aff4cd642f23f3e1b0bb14668f17b0f8a1a77c38f6bdbccc67f646"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 12,
+      "signature": "pose",
+      "skill_id": "geometry.matrix",
+      "source": {
+        "bytes": 1754,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/geometry.py",
+        "sha256": "8406fc0de6c012e0b20014c1ce0d2740db4399c5b3a77e74701eb3524f7123a2"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 19,
+      "signature": "transform",
+      "skill_id": "geometry.pose",
+      "source": {
+        "bytes": 1754,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/geometry.py",
+        "sha256": "8406fc0de6c012e0b20014c1ce0d2740db4399c5b3a77e74701eb3524f7123a2"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 24,
+      "signature": "real_pose, set_pose, target",
+      "skill_id": "geometry.calculate_target_pose",
+      "source": {
+        "bytes": 1754,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/geometry.py",
+        "sha256": "8406fc0de6c012e0b20014c1ce0d2740db4399c5b3a77e74701eb3524f7123a2"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 28,
+      "signature": "urdf, joint_names",
+      "skill_id": "geometry.joint_chain",
+      "source": {
+        "bytes": 1754,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/geometry.py",
+        "sha256": "8406fc0de6c012e0b20014c1ce0d2740db4399c5b3a77e74701eb3524f7123a2"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 45,
+      "signature": "chain, base_pose, joints",
+      "skill_id": "geometry.forward_kinematics",
+      "source": {
+        "bytes": 1754,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/geometry.py",
+        "sha256": "8406fc0de6c012e0b20014c1ce0d2740db4399c5b3a77e74701eb3524f7123a2"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 5,
+      "signature": "targets, grips, arms, arm=None, joints=None",
+      "skill_id": "joint_skills.joint_action",
+      "source": {
+        "bytes": 690,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/joint_skills.py",
+        "sha256": "15ece715fad8e2f33bd8b32b71c8a531aa2519cca536a444d4b6a75cf5ff7cfb"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 13,
+      "signature": "grips, arm, value, repeats, action",
+      "skill_id": "joint_skills.hold_gripper",
+      "source": {
+        "bytes": 690,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/joint_skills.py",
+        "sha256": "15ece715fad8e2f33bd8b32b71c8a531aa2519cca536a444d4b6a75cf5ff7cfb"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 19,
+      "signature": "path, indices, arm, action",
+      "skill_id": "joint_skills.follow_waypoints",
+      "source": {
+        "bytes": 690,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/joint_skills.py",
+        "sha256": "15ece715fad8e2f33bd8b32b71c8a531aa2519cca536a444d4b6a75cf5ff7cfb"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 11,
+      "signature": "model, program_id, packet",
+      "skill_id": "manipulation_programs.execute_memory",
+      "source": {
+        "bytes": 1865,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/manipulation_programs.py",
+        "sha256": "50e76c9f4524fd454b30a6ad570d5b652827e28b457af32fd00c65a15d174bfd"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 12,
+      "signature": "model, cfg, memory_path, definitions, revision",
+      "skill_id": "memory_runtime.install_programs",
+      "source": {
+        "bytes": 1448,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/memory_runtime.py",
+        "sha256": "ca37148dac7ddd63aff35e6f3c343bf6afbc56ce7587709844397395c38ff431"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": "Approach a contact pose and close the gripper.",
+      "kind": "manipulation_primitive",
+      "line": 31,
+      "signature": "source, arm, quaternion, *, approach_height, contact_height, open_grip, grasp_grip, prepare_steps, grasp_steps, contact_waypoints, move, hold_gripper",
+      "skill_id": "pick_place.grasp",
+      "source": {
+        "bytes": 3753,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pick_place.py",
+        "sha256": "7d8aaa87404ab3d8249e162a2b9b7e9b682f2aab1f4ed55090599616166a93fa"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": "Raise the end effector above the supplied planar position.",
+      "kind": "manipulation_primitive",
+      "line": 44,
+      "signature": "source, arm, quaternion, *, height, waypoints, move",
+      "skill_id": "pick_place.lift",
+      "source": {
+        "bytes": 3753,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pick_place.py",
+        "sha256": "7d8aaa87404ab3d8249e162a2b9b7e9b682f2aab1f4ed55090599616166a93fa"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": "Move to a destination at the supplied clearance height.",
+      "kind": "manipulation_primitive",
+      "line": 52,
+      "signature": "destination, arm, quaternion, *, height, move",
+      "skill_id": "pick_place.transport",
+      "source": {
+        "bytes": 3753,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pick_place.py",
+        "sha256": "7d8aaa87404ab3d8249e162a2b9b7e9b682f2aab1f4ed55090599616166a93fa"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": "Lower to the release pose and open the gripper.",
+      "kind": "manipulation_primitive",
+      "line": 60,
+      "signature": "destination, arm, quaternion, *, height, waypoints, open_grip, release_steps, move, hold_gripper",
+      "skill_id": "pick_place.release",
+      "source": {
+        "bytes": 3753,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pick_place.py",
+        "sha256": "7d8aaa87404ab3d8249e162a2b9b7e9b682f2aab1f4ed55090599616166a93fa"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": "Withdraw from the release position.",
+      "kind": "manipulation_primitive",
+      "line": 70,
+      "signature": "destination, arm, quaternion, *, height, waypoints, move",
+      "skill_id": "pick_place.retract",
+      "source": {
+        "bytes": 3753,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pick_place.py",
+        "sha256": "7d8aaa87404ab3d8249e162a2b9b7e9b682f2aab1f4ed55090599616166a93fa"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": "Move to the motion provider's configured home pose.",
+      "kind": "manipulation_primitive",
+      "line": 78,
+      "signature": "arm, *, waypoints, move",
+      "skill_id": "pick_place.return_home",
+      "source": {
+        "bytes": 3753,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pick_place.py",
+        "sha256": "7d8aaa87404ab3d8249e162a2b9b7e9b682f2aab1f4ed55090599616166a93fa"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "skill_composition",
+      "line": 84,
+      "signature": "source, destination, arm, quaternion, parameters, *, move, hold_gripper",
+      "skill_id": "pick_place.pick_place",
+      "source": {
+        "bytes": 3753,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pick_place.py",
+        "sha256": "7d8aaa87404ab3d8249e162a2b9b7e9b682f2aab1f4ed55090599616166a93fa"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 8,
+      "signature": "matrix: np.ndarray",
+      "skill_id": "pose_skills.quaternion_from_matrix",
+      "source": {
+        "bytes": 2887,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pose_skills.py",
+        "sha256": "53b5bffdc36b4560c92d01ed45d64859909f9704a650ac949d4c1a597451fdce"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 27,
+      "signature": "quaternion: Sequence[float], *, error_type=ValueError",
+      "skill_id": "pose_skills.rotation_from_quaternion",
+      "source": {
+        "bytes": 2887,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pose_skills.py",
+        "sha256": "53b5bffdc36b4560c92d01ed45d64859909f9704a650ac949d4c1a597451fdce"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 35,
+      "signature": "robot: Any, pose: Sequence[float], *, rotation_fn=rotation_from_quaternion, quaternion_fn=quaternion_from_matrix",
+      "skill_id": "pose_skills.grasp_pose_to_end_effector",
+      "source": {
+        "bytes": 2887,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pose_skills.py",
+        "sha256": "53b5bffdc36b4560c92d01ed45d64859909f9704a650ac949d4c1a597451fdce"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 42,
+      "signature": "parent: Sequence[float], local: Sequence[float], *, rotation_fn=rotation_from_quaternion, quaternion_fn=quaternion_from_matrix",
+      "skill_id": "pose_skills.compose_pose",
+      "source": {
+        "bytes": 2887,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/pose_skills.py",
+        "sha256": "53b5bffdc36b4560c92d01ed45d64859909f9704a650ac949d4c1a597451fdce"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 11,
+      "signature": "owner, source_file, program, packet",
+      "skill_id": "stage_programs.execute_packet",
+      "source": {
+        "bytes": 1870,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/stage_programs.py",
+        "sha256": "2d41ab7e4e2b53aaa51615aa6bbee6a8e3fd2d86050b4a8a7d1c52ea9e90ac82"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    },
+    {
+      "contract_status": "source signature; runtime preconditions not fully formalized",
+      "description": null,
+      "kind": "robotics_or_execution_utility",
+      "line": 38,
+      "signature": "owner, source_file, program, arguments",
+      "skill_id": "stage_programs.execute",
+      "source": {
+        "bytes": 1870,
+        "path": "assets/physicalrsi/implementations/code-skills/physicalrsi_skill_library/stage_programs.py",
+        "sha256": "2d41ab7e4e2b53aaa51615aa6bbee6a8e3fd2d86050b4a8a7d1c52ea9e90ac82"
+      },
+      "validation_status": "source_present; physical validation not established by this inventory"
+    }
+  ]
+}

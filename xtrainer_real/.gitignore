@@ -1,0 +1,9 @@
+.deps/
+.venv/
+__pycache__/
+*.py[cod]
+local/*
+!local/.gitkeep
+runs/*
+!runs/.gitkeep
+.pytest_cache/

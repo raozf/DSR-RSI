@@ -1,0 +1,15 @@
+{
+  "source": "manual",
+  "simulated": false,
+  "approved": true,
+  "captured_at": "REPLACE_WITH_OBSERVATION_TIME_ISO8601",
+  "covered_labels": [
+    "green"
+  ],
+  "all_cups_opening_down": true,
+  "block_positions_world_mm": {
+    "red": null,
+    "green": null,
+    "blue": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/Dobot-Arm/dobot_xtrainer.git",
+  "commit": "04cbec5f57aee6355b70c3933d84962376029f1d",
+  "license": "GPL-3.0; see SDK license/",
+  "files_sha256": {
+    "dobot_control/robots/dobot_api.py": "fcb9867c756641596d32a5e54c6e4eef9127bc5e43423118689def41f9126f82",
+    "dobot_function/function_utils.py": "e4b10a1f4a480cff9159498cc5caa17a256fbec4dbc588a11782b25af114b5e4",
+    "third_party/feetech/scservo_sdk/__init__.py": "63792210db8333d9d95b9ca1b27c2a35ac10e61ac84b94812d753765bcf95ee8",
+    "third_party/feetech/scservo_sdk/group_sync_read.py": "5630b8c4ffa6a34360e149dd93c2065a2021e62fcca3f2dc4158a69fd7f1771b",
+    "third_party/feetech/scservo_sdk/group_sync_write.py": "527ee1e4208b973cd267a10a6d4d0561452dc999b8dd6c0aeec9bf684fe8fbb0",
+    "third_party/feetech/scservo_sdk/hts.py": "7897f0266ad1f90f2baf93595cbfc5c685fc694e4b82e9c03eb004e8a3997a69",
+    "third_party/feetech/scservo_sdk/port_handler.py": "42e95754e961cda5488a0f6d88c5616ae768730af7bf05c1451a9927512f95c6",
+    "third_party/feetech/scservo_sdk/protocol_packet_handler.py": "8997d68ee8e1331482d86b35dd3f7e1dc53fbea01192f054c907fecddf99b7ff",
+    "third_party/feetech/scservo_sdk/scscl.py": "a918e5d3f64cc512c4a887d92af45b2b8b49c9eb8f099ca2b99bd7e9f0900b23",
+    "third_party/feetech/scservo_sdk/scservo_def.py": "6c275beefa7784c812df4a91d0cac0c257d70a8e6842504b7cd122cab1e980d6",
+    "third_party/feetech/scservo_sdk/sms_sts.py": "9c5376df08e489e730809d2e6479037b120845a4b823c2bfd6f7a0bf48cd9b3d"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "dsr.runtime/v1",
+  "environment": {
+    "DSR_POLICY_PYTHON": "/absolute/path/to/independent/policy/python",
+    "DSR_SIM_PYTHON": "/absolute/path/to/independent/simulator/python",
+    "DSR_CODE_PYTHON": "/absolute/path/to/independent/code-worker/python",
+    "DSR_TRAIN_PYTHON": "/absolute/path/to/independent/training/python",
+    "DSR_CHECKPOINT_ROOT": "/read-only/path/to/checkpoints",
+    "DSR_ROBODOJO_ASSETS": "/read-only/path/to/RoboDojo/Assets",
+    "DSR_CODE_ASSET_ROOT": "../assets/physicalrsi",
+    "DSR_CODEX_HOME": "/authorized/path/to/codex-home"
+  },
+  "budgets": {
+    "run_timeout_seconds": 600
+  }
+}

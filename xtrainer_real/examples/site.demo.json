@@ -1,0 +1,85 @@
+{
+  "schema": "dsr.xtrainer-config/v1",
+  "example_only": true,
+  "sdk": {
+    "root": ".deps/dobot_xtrainer"
+  },
+  "calibration_file": "examples/calibration.demo.json",
+  "arms": {
+    "left": {
+      "ip": null,
+      "dashboard_port": 29999,
+      "move_port": 30003,
+      "feedback_port": 30004,
+      "user_index": 0,
+      "tool_index": 1,
+      "gripper": {
+        "port": null,
+        "id": 21,
+        "baudrate": 1000000,
+        "open_ticks": 2048,
+        "closed_ticks": 3055,
+        "speed": 200,
+        "acceleration": 10,
+        "torque_limit": 100,
+        "settle_s": 0.5,
+        "position_tolerance_ticks": 50
+      }
+    },
+    "right": {
+      "ip": null,
+      "dashboard_port": 29999,
+      "move_port": 30003,
+      "feedback_port": 30004,
+      "user_index": 0,
+      "tool_index": 1,
+      "gripper": {
+        "port": null,
+        "id": 22,
+        "baudrate": 1000000,
+        "open_ticks": 2048,
+        "closed_ticks": 3055,
+        "speed": 200,
+        "acceleration": 10,
+        "torque_limit": 100,
+        "settle_s": 0.5,
+        "position_tolerance_ticks": 50
+      }
+    }
+  },
+  "camera": {
+    "kind": "manual",
+    "device": null,
+    "serial": null,
+    "width": 640,
+    "height": 480,
+    "calibration_file": null
+  },
+  "perception": {
+    "mode": "measured_json",
+    "notes": "Manual/vision JSON in calibrated world_mm; camera capture alone does not estimate a scene."
+  },
+  "safety": {
+    "speed_percent": 5,
+    "acceleration_percent": 5,
+    "max_step_mm": 12,
+    "max_rotation_step_deg": 5,
+    "tcp_padding_mm": 10,
+    "min_tcp_separation_mm": 120,
+    "position_tolerance_mm": 1,
+    "rotation_tolerance_deg": 1,
+    "park_drift_tolerance_mm": 2,
+    "park_joint_tolerance_deg": 1,
+    "motion_timeout_s": 20,
+    "connect_timeout_s": 2,
+    "reply_timeout_s": 2,
+    "feedback_timeout_s": 0.5,
+    "scene_max_age_s": 120,
+    "checkpoint_timeout_s": 300,
+    "forbidden_boxes_world_mm": []
+  },
+  "tasks": {
+    "safe_transit_z_mm": 280,
+    "max_ruler_sweep_mm": 80
+  }
+}

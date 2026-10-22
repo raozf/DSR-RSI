@@ -1,0 +1,13 @@
+{
+  "schema": "dsr.xtrainer-ws-sdk-lock/v1",
+  "repository": "https://github.com/Amsongbc/dobot_X-trainer",
+  "commit": "40bd10bbdbc1059f192970840975f03a179e1d21",
+  "files_sha256": {
+    "dobot_control/robots/dobot_api.py": "120273c06319eda0f97599d874fbb709ce840ef2057ecee5da73cfac832636e4",
+    "dobot_control/robots/robot_node.py": "05806d0c960499d3ecf574d026d318704877ea1b0db11fd9dc85a843e03ee8ab",
+    "dobot_control/robots/robot.py": "0899106a0078c5191e35e0a0a3a6be332bcd536ca465e92af17f7d6f638816f9",
+    "dobot_control/gripper/dobot_gripper.py": "908ac2344c270d62bca3f3fcc6048c5a0b195c3b74bc7e4a70b9e68bd462bf8b",
+    "scripts/function_util.py": "678e74fc71d3ac951a4ccec10ccfd74e7016e69f3a2d13b6bc8b31fa69e2ab19"
+  },
+  "source_policy": "The SDK checkout is an immutable dependency. Adapter code is isolated under xtrainer_real/ws_bridge and never edits the checkout."
+}

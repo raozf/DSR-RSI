@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema",
+    "environment",
+    "budgets"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "dsr.runtime/v1"
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "DSR_CHECKPOINT_ROOT": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_CODEX_HOME": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_CODE_ASSET_ROOT": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_CODE_PYTHON": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_KIT_ARGS": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_LOCAL_STATE": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_OMP_THREADS": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_POLICY_PYTHON": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_ROBODOJO_ASSETS": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_ROOT": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_SIM_PYTHON": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DSR_TRAIN_PYTHON": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_timeout_seconds"
+      ],
+      "properties": {
+        "run_timeout_seconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 86400
+        }
+      }
+    }
+  }
+}

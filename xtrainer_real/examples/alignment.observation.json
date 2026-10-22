@@ -1,0 +1,40 @@
+{
+  "source": "manual",
+  "simulated": false,
+  "approved": true,
+  "captured_at": "REPLACE_WITH_OBSERVATION_TIME_ISO8601",
+  "objects": {
+    "cube0": {
+      "position_world_mm": [
+        -60,
+        300,
+        20
+      ],
+      "size_mm": 30,
+      "yaw_deg": 0
+    },
+    "cube1": {
+      "position_world_mm": [
+        0,
+        314,
+        20
+      ],
+      "size_mm": 30,
+      "yaw_deg": 0
+    },
+    "cube2": {
+      "position_world_mm": [
+        60,
+        304,
+        20
+      ],
+      "size_mm": 30,
+      "yaw_deg": 0
+    }
+  },
+  "max_block_lift_mm": {
+    "cube0": null,
+    "cube1": null,
+    "cube2": null
+  }
+}

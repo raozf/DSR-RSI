@@ -1,0 +1,68 @@
+{
+  "schema": "dsr.xtrainer-scene/v1",
+  "example_only": true,
+  "calibration_id": "DEMO_NOT_MEASURED",
+  "frame": "world_mm",
+  "captured_at": "2000-01-01T00:00:00+00:00",
+  "source": {
+    "kind": "manual",
+    "notes": "Synthetic fixture for offline preview. Replace positions, TCP contacts, IDs and capture time with measurements."
+  },
+  "task": "align_blocks",
+  "objects": {
+    "cube0": {
+      "position_world_mm": [
+        -60,
+        300,
+        20
+      ],
+      "size_mm": 30,
+      "yaw_deg": 0
+    },
+    "cube1": {
+      "position_world_mm": [
+        0,
+        314,
+        20
+      ],
+      "size_mm": 30,
+      "yaw_deg": 0
+    },
+    "cube2": {
+      "position_world_mm": [
+        60,
+        304,
+        20
+      ],
+      "size_mm": 30,
+      "yaw_deg": 0
+    },
+    "straightedge": {
+      "position_world_mm": [
+        0,
+        265,
+        0
+      ],
+      "length_mm": 220,
+      "axis_world": [
+        1,
+        0,
+        0
+      ],
+      "push_axis_world": [
+        0,
+        1,
+        0
+      ],
+      "arm": "left",
+      "contact_tcp_world_mm_deg": [
+        0,
+        253,
+        100,
+        180,
+        0,
+        0
+      ]
+    }
+  }
+}

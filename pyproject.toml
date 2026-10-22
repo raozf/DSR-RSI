@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsr"
+version = "0.1.0"
+description = "Auditable embodied policy execution and recursive harness development"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "Pillow>=10,<12", "PyYAML>=6,<7", "jsonschema>=4.23,<5", "rich>=13,<16", "prompt-toolkit>=3,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "scipy>=1.11,<2", "opencv-python-headless>=4.11,<4.12", "h5py>=3.10,<4", "safetensors>=0.4,<1", "websockets>=12,<13", "msgpack>=1,<2", "msgpack-numpy>=0.4.8,<0.5"]
+
+[project.scripts]
+dsr = "dsr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", ".", "vendor/PhysicalRSI"]
+addopts = "-ra"

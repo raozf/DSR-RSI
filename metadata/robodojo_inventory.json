@@ -1,0 +1,776 @@
+{
+  "schema_version": 1,
+  "benchmark": "RoboDojo",
+  "version": "0.2.0",
+  "source": "Migrated DSR-RSI/vendor/RoboDojo snapshot; upstream commit unknown",
+  "official_protocol_source": "vendor/RoboDojo/scripts/internal/summarize_result.py",
+  "canonical_tasks": 42,
+  "native_configurations": 54,
+  "nominal_episodes": 6300,
+  "category_canonical_counts": {
+    "generalization": 12,
+    "memory": 6,
+    "precision": 8,
+    "long-horizon": 8,
+    "open": 8
+  },
+  "tasks": [
+    {
+      "task_family": "align_blocks",
+      "native_configuration": "align_blocks",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "082c9d7a32968052b8ce954bee212c7ec0a96b756150701d4b531abdea59be2b",
+      "module_sha256": "c8597e96132cd7c9d30f3ae101f7bbe8ac28597b629599d75d442bbea4c6e74c",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "arrange_largest_number",
+      "native_configuration": "arrange_largest_number",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "3bf6b7e286ea328fb1e4a994a8d30af9afb4b0b4dcd7ceafed43cc6160c9978f",
+      "module_sha256": "277acd20ae4345dc71267762e588b7b0343387c71685183890f044a4808b7a20",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "arrange_largest_number",
+      "native_configuration": "arrange_largest_number_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "145b26eb5c8ed7d084a4ddc6e21694c542f4a86150756188ea38dcf66e565603",
+      "module_sha256": "01757509978663bf7c0c95059e8ae18d45b8fe0953f6b54540e2bd6bf141182e",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "build_tower",
+      "native_configuration": "build_tower",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "e1bab8756bbc5664e3171e2389c060a79a3fbbf92a6af4ef555dcaf59fce275c",
+      "module_sha256": "814cf6ffb459871e5cf49f4e127903dbfbc30926f33db71de0b84a71ab235d6e",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "classify_objects",
+      "native_configuration": "classify_objects",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "80a754d2aedd6a89f58185eae36f5b2eb1a28250f40a67325f576fde34650384",
+      "module_sha256": "aef4333c088766375e21a928d53a9a93aaee285fecae41e22385acdc74dd11ac",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "classify_objects_by_language",
+      "native_configuration": "classify_objects_by_language",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "ac6c739ca82a64b53c799af79b44363db1a88246f76d867f8830729e5613507b",
+      "module_sha256": "242a8f048f487eb174ef246be78613bbb5f153549ee11a2650412718cf3b36c9",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "cover_blocks",
+      "native_configuration": "cover_blocks",
+      "category": "memory",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "68f90c85fad2b152cf7853cf48888d09ce74bb27a692ff2feacd11160771c5a7",
+      "module_sha256": "9d14931b16842b93bea8abf9a07991a93a7e663b93c5fd1695108c8b922ab862",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "deposit_coin",
+      "native_configuration": "deposit_coin",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "f547b12216fb9a5dfe2e7d7e882d89e1e53ee1a805c943ba09a3c2cdea8c17a3",
+      "module_sha256": "f9868ef827ec17b8db6c4650cc5d9a9e593d20d00ee822e2212ce229ec01fb61",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "fasten_screws",
+      "native_configuration": "fasten_screws",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "5fbe4cf5b3ee2eafc2771137b13176f01617f8b2131f02503e676a7b62e2eabf",
+      "module_sha256": "2e187a28e33e44efb87baae6463b3ec35264ccd41e35c21a1be44f6361675185",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "fill_egg_holder",
+      "native_configuration": "fill_egg_holder",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "d79129278c9a5488d63bb1d3865f2c6b39f21f85957ec94ace091af9ae29e31f",
+      "module_sha256": "506dfb772f8882ae53966e3580affde19c3c0f11591c78cc5f5b1d997ba04f7e",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "fill_pen_holder",
+      "native_configuration": "fill_pen_holder",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "ac72e5582495e8757c547997b317e2fe990370009527b1faa6bfbf4e1275537c",
+      "module_sha256": "8706dce239487e078b21af0b95bcc5cd4eabdcdadcdcbc6400d6b138d982f1e6",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "fold_clothes",
+      "native_configuration": "fold_clothes",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "56447e3f592e0db388ebb7482ec758ecd5485ec81b9227c2dffe5390bd7d8c8e",
+      "module_sha256": "ecea9c287d0579605330168e6f36734704fb14a6b1e5dec82b6f2ee3a56ec20a",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "fold_clothes",
+      "native_configuration": "fold_clothes_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "eafe52c0abcc1889069383b008cbe95c6af2d18ceafb1aecc78f0fae3b491b04",
+      "module_sha256": "9e40abe3f7201a8c13961edc1ca8075260c315584d3d6b93fa1df966d13d1e88",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "general_pickup",
+      "native_configuration": "general_pickup",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "35de68117cb0ed596b30db1c62f1f9090f2cd1237242a03d5aaeb7186e791d93",
+      "module_sha256": "1a9eef7fe518f9d2c6805ad1a8f97c1045fa83726f84b9c63f67ffdfabbc40a7",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "hang_mugs",
+      "native_configuration": "hang_mugs",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "0086d374d3f7e82abb85e43a17cdfa437e1ac645a0171fb47496c2b81427dce9",
+      "module_sha256": "4bc6586bd87de030b9c580fea2a45e7977c3b6a4d75cf3c43b546d349d42e906",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "hang_mugs",
+      "native_configuration": "hang_mugs_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "847dfd39059275a671b5beff0243bf7bbaeebd9e5c0612a1877cdf12b9007dc6",
+      "module_sha256": "ebfa4a95deb954aa7a9063a07fe366cb5ea1835d3f52342b10d531225dfeee92",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "imitate_sorting_sequence",
+      "native_configuration": "imitate_sorting_sequence",
+      "category": "memory",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "d9e194d8c742288601c641ccb75052a67da46e536c0b06c7fb7311d9e2c61a42",
+      "module_sha256": "18400cb3c5f5103492819df2dcdf05a77916106e8a503cb62b4ee6cdbaa9305b",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "insert_key",
+      "native_configuration": "insert_key",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "c0b409d5c020e0ad706c378b6f63b39dfe7bed4682d978907c40e1cfa7623335",
+      "module_sha256": "180978a2915744f0596fbca4ea0ad6dcb47dce005d43f06807249bc8b4d1a828",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "insert_tubes",
+      "native_configuration": "insert_tubes",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "5c070e5c764a2ea93f8de0b52e6a664a23c717963fe09fe3af17918a4a1ee9ef",
+      "module_sha256": "9a68795ddbd0b816ffd7627e673390ecd83594c0e9d374d4e3abf3435ad439e1",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "make_kong",
+      "native_configuration": "make_kong",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "8a33c9e57b6e6c719c4800911c37272ba055ad0f4cda2f1de9d531ee2910351a",
+      "module_sha256": "b9266689d65f9213b05219ad952344f9fd63be8892097ec0103af99791b245d5",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "make_toast",
+      "native_configuration": "make_toast",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "d190a26233db174538ff0052b4c2958a3b107f0ccc63d0fdfe28da4c7f5dc57b",
+      "module_sha256": "1047f484a73d1f92304393879b51f87e33d661b6ad7937198352fe37a0d3233d",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "make_toast",
+      "native_configuration": "make_toast_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "ca2c1e55a0975c8b019523710e90131504d8d2afeb829be362e4d7927fe97b48",
+      "module_sha256": "69fb879b89e98f7369971834eb6d1b95c5a65f5ffe978b2cffae0b12c6b756ca",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "match_and_pick_from_conveyor",
+      "native_configuration": "match_and_pick_from_conveyor",
+      "category": "memory",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "0ae1c2537d9b1880748316928cfd7ba4c6421ecccfedb85c4c5395a7a86c5361",
+      "module_sha256": "53110b8a0c971bd3ae8878bfb7d0dcd9626bd9b610d4e7fc91772313b435a5c0",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "organize_table",
+      "native_configuration": "organize_table",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "9ffa15dd279060d4f042285a2c53a341c7208e2f89a2f3dd36ee08b22aa453fa",
+      "module_sha256": "9e3057e70b8ad0b8cb553be6dec00d2b71fada6f4087edcb38fc56508f572dbd",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "pack_objects_into_box",
+      "native_configuration": "pack_objects_into_box",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "e232962b8394d08c04c5da14deb88d7b233afa00ab99af8001c084218951d7ca",
+      "module_sha256": "84a1cf1dd5e166f36291130f9d8cb5dfe4b3f4732a46674bef6374a7ea2d66be",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "pack_objects_into_box",
+      "native_configuration": "pack_objects_into_box_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "7ac7f034fcb169e33a7f0a03b2b77e54d0206ed715409359b579055a701196ef",
+      "module_sha256": "4db259a1b97cdcc39ebc9794244fadc79d31c4ae64069c9b11a233356fcb655c",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "pick_from_conveyor_by_image",
+      "native_configuration": "pick_from_conveyor_by_image",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "6b310b70a0ead9d09e7c221c6bbc952140a44b1d43034613bf02e954eebcf9dd",
+      "module_sha256": "a0d29576d0aab8232d2fd3ebcc8c510e81c70b4cc04602a5be3e99ee2275e01d",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "play_Xylophone",
+      "native_configuration": "play_Xylophone",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "28adedb0f03c49693af32cea37855f3f95ec3f76f031bfd571fb8bfffb2ec59c",
+      "module_sha256": "b7a4b0bc0457bcf55d714ca1867476fc4aabc53084adfc78d3ff5d1437bf7847",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "play_stacking_toy",
+      "native_configuration": "play_stacking_toy",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "a09afc106161064a2ea6a40882d717f7872bd4875309a97431d6863a9b7ffa1c",
+      "module_sha256": "23361329ee7efe330da1f1c241415205bafed2b6c082a913659d868a80d338c3",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "play_tic_tac_toe",
+      "native_configuration": "play_tic_tac_toe",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "63f863a7fb81a040f65803c64f97c4e9577d4fe32cd0f92563bdc72d1aa336d2",
+      "module_sha256": "8f75ebfe55c997ad9bd3b342db46e843e87397db94356f31cadcbe0cb483bca7",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "plug_in_charger",
+      "native_configuration": "plug_in_charger",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "2046b47112049e038ecfa24a8c8044fb1db84f629a4a32eeb24822157d2d4dcb",
+      "module_sha256": "aaa59ade46dc54f430e1148e3f6fae487970cd29eb2c07b5ff7b4045edb831b6",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "pour_balls_into_vase",
+      "native_configuration": "pour_balls_into_vase",
+      "category": "precision",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "084a707af61d24123912777b417fe0c0b230eb9653e686af42570791e924ff8b",
+      "module_sha256": "eae388b93ec196c401f76bbab3b0119cb2164f90bece0225d4fb925d3f2b73ab",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "pour_by_language",
+      "native_configuration": "pour_by_language",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "efb2e3c3cb08dd6d2d2ae011b3e9a218b5f1f0a92f025b8e3b9e8abd7011c250",
+      "module_sha256": "f7a15a7fca2c649a7918d68960ede27e667f409a339b668dd9876db890724cfb",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "pour_liquid_into_cup",
+      "native_configuration": "pour_liquid_into_cup",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "32092b11667b3306579b04225303610c061585ace28531fa9996afc339c5a2ba",
+      "module_sha256": "73f8c91b57c352fdc1e7ba3fe5354b3c10e4156d8e5ba777762ad0fa1aff5663",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "pour_liquid_into_cup",
+      "native_configuration": "pour_liquid_into_cup_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "1603feeab6f0f7dc9c4897e7f40f322b86112b6ab987dad0598f42ac1b35db69",
+      "module_sha256": "a1c4097b6e34b2c62885b3a9c7d2584a93d9e296dc41d311a80c2e6d541d53af",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "press_by_number",
+      "native_configuration": "press_by_number",
+      "category": "memory",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "b784643495bcbca933f5a5fbc91b7dad3465fe888239b358d516977c78c38f63",
+      "module_sha256": "006f969087c00c417a63875a9de153f698c52d1f1ca0caf0aa16076aa15059c5",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "push_T",
+      "native_configuration": "push_T",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "b55ea11002ff3e5dc63982ca8c1247fd7bee4f4a607f4d674e220b86cf120a25",
+      "module_sha256": "a01d753bc320ffbf492ccc29e5f7ab3b39e6c7d255cd25804db1934a30fa5b41",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "push_T",
+      "native_configuration": "push_T_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "07609ec20cea40afa1d5720e895fb1b445411f261b2e5b6850e75d0f1930d32d",
+      "module_sha256": "dc8d9c8e0d2e8dfffa2b7d433a8278c0eaf707cc4861b15035364c2e70061dab",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "put_bottles_into_dustbin",
+      "native_configuration": "put_bottles_into_dustbin",
+      "category": "long-horizon",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "7eddf43e287b6e8aea686c6d686fb87e13ac1be1cb5aac16a8a2b0d2e9eb976e",
+      "module_sha256": "3ba6e19df0c5ff19ba961092f031ce14e91e72a9a4a5934eece6000a1ffa1c48",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "solve_equation",
+      "native_configuration": "solve_equation",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "bdaad2ff1cc8b7ec6413a3715d49ea9cefd664e7e204544977832e18785f1e75",
+      "module_sha256": "e287a2f36b82b28e8ca7824f63b1b723b02972ea6dfc115ff32b2882729751f7",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "sort_nesting_dolls_by_size",
+      "native_configuration": "sort_nesting_dolls_by_size",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "8927cb2ebb18449554d851e629bd7d568e12e46c5c3c636c8e7122f4fab1ed1f",
+      "module_sha256": "1838fa6b515bad3796895cb5c1883c6a42789b7dada5434765764600e70beb49",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "sort_nesting_dolls_by_size",
+      "native_configuration": "sort_nesting_dolls_by_size_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "f895d3ce7eaae99454706afccd09011f56d077998bcc1e95840116658b78f139",
+      "module_sha256": "b793ab5bd32bd2c10bd46874440904837f9c4e290e7508b06426e2e96425709a",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "stack_blocks",
+      "native_configuration": "stack_blocks",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "2802e88ebc3e2d3d05ce345d75e9ad6151a6690e4ef1e0021a5223d291a402d2",
+      "module_sha256": "50bd388f9e47002966fbb0146742467a820295b8686e0f86379f0efbcfffcc1b",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "stack_blocks_by_language",
+      "native_configuration": "stack_blocks_by_language",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "4fbfed4f7fc49120831087e709a8dbdfdb4504eb143196000d5790b54eb3bc40",
+      "module_sha256": "36a83925f35c7a4caac5add328dd35cb1d346bad833d3064f455d88221e7a41e",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "stack_blocks",
+      "native_configuration": "stack_blocks_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "e25d2a096601da30abdcfe1256a464eaf48c0c8f844eb2c737232626d49639d5",
+      "module_sha256": "19d4e5cd693e068ad64de75cbcd24977ab8d39e22fa17362a391dcd733bc9bb5",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "stack_bowls",
+      "native_configuration": "stack_bowls",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "4e2aaa12b8b0f58ca801f1a93638c46d3b49ebad809c5a8011382ccda846dcb1",
+      "module_sha256": "022c129ec3493183b1a26688a0402f5a00a1546ae011999e9c19f4c0029e2b7d",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "stack_bowls",
+      "native_configuration": "stack_bowls_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "5c08af1bcc925d958d53de51e8ebd336006203f1bc81e4ef68f3719eadfabb49",
+      "module_sha256": "a0e20469eb44a9ee98650d09386814c1df5264c68ec139f06aabf0c86f092514",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "store_laptop_and_headphones",
+      "native_configuration": "store_laptop_and_headphones",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "0fdaab803a9370a9e2d1fc8d86a5788daa3940c08fd6f767334f625642fca3e2",
+      "module_sha256": "2bee4e31f0594900629fe7f43266e16fecb310b152930ce51524507136809a92",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "store_laptop_and_headphones",
+      "native_configuration": "store_laptop_and_headphones_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "93f0ca39bc8bb32df94e84a02f22ed4d7860f37cdc0b9dd17e44721445849576",
+      "module_sha256": "58c3c5113054a379214d64ae406ed8dde99603cf684ce9cd8c7bcb72ed334382",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "store_tools_in_toolbox",
+      "native_configuration": "store_tools_in_toolbox",
+      "category": "open",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "641c8ef92393bd986e408d26a84b1cfcdac27466a5ac5f0b3ebe4bb84430c527",
+      "module_sha256": "2969fc3eb171560b3c0bcea62b9f38b8b35f3aecc9bcc7085c3b1cec365b48fc",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "swap_T",
+      "native_configuration": "swap_T",
+      "category": "memory",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "1daf769911e13714b4aeabd208292931e32f4dd39968893152bb7bb477c46c9b",
+      "module_sha256": "57fc289b3957caa454e1d8e005e3a57c973d6ab40121845c94799e61e4bfafdf",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "swap_blocks",
+      "native_configuration": "swap_blocks",
+      "category": "memory",
+      "episodes_per_seed": 50,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "b6bb2a9df494719f26c6b1aab2e7576107ae76e2fbac8b63a5770f21e0e9f05f",
+      "module_sha256": "08ed24ae9dff27f4e5c850161a02f62ce237859c096d9b06a853a7890e0ad4ed",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "sweep_blocks",
+      "native_configuration": "sweep_blocks",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "98aa25ac39be9d335c71b2b586bbba372789e9d61e652e1147152c87febbf1f5",
+      "module_sha256": "65786217e199c1e2b26ec8e2c232bf98ecb304a20939d0908fe12bc41e990614",
+      "execution_validation": "not executed in DSR"
+    },
+    {
+      "task_family": "sweep_blocks",
+      "native_configuration": "sweep_blocks_random",
+      "category": "generalization",
+      "episodes_per_seed": 25,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config_sha256": "4ebff5e2cad07f958dc4b2793b86b1aa803c0809394818ee3752d300e58b6187",
+      "module_sha256": "68b6127038322cf001d5f614060b8a1d96e64a49efddfcdcae91127d5c206bc5",
+      "execution_validation": "not executed in DSR"
+    }
+  ],
+  "status": "Inventory verified by static source inspection; no DSR simulation execution yet"
+}
